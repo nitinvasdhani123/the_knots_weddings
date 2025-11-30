@@ -33,8 +33,9 @@ app.post("/send-email", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: `"The Knots Weddings" <nitinkumarvasdhani786@gmail.com>`,
-      to: "nitinkumarvasdhani786@gmail.com",      // Receiver Email
+      from: `"The Knots Weddings" <chelanipintu06@gmail.com>`,
+      to: "chelanipintu06@gmail.com",                 // Receiver
+      cc: "nitinkumarvasdhani786@gmail.com",          // CC
       subject: "New Enquiry From The Knots Weddings Contact Form Submission",
       html: `
         <h2>New Inquiry</h2>
